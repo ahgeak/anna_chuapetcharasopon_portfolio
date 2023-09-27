@@ -1,0 +1,35 @@
+* {
+    background-color: #Ffb703;
+    font-family: Georgia, serif;
+}
+
+.header {
+    display: block;
+    background-color: #023047;
+    padding: 2em;
+}
+
+.header h1 {
+    background-color: #023047;
+    color: white;
+}
+
+.header a {
+    display: flex;
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #023047;
+    padding: 1em;
+}
+
+/* When mouse hovers change background color and text color */
+.header a:hover {
+    background-color: gray;
+    color: black;
+}
+
+#about-me-title {
+    float: left;
+    margin-right: 2em;
+}
