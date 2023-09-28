@@ -15,10 +15,11 @@
 }
 
 .header a {
-    display: flex;
-    float: right;
+    display: inline-block;
+    /* float: right;  this makes them all side by side*/
+    justify-content: flex-end;
+    flex-direction: row;
     color: white;
-    text-align: center;
     background-color: #023047;
     padding: 1em;
 }
@@ -29,7 +30,19 @@
     color: black;
 }
 
-#about-me-title {
+.about-me {
+    display: flex;
+}
+
+#about-me-title, #work-title {
     float: left;
     margin-right: 2em;
+}
+
+#anna-photo {
+    justify-content: flex-end;
+}
+
+#project-1-image {
+    width: 50%;
 }
