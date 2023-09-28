@@ -4,24 +4,33 @@
 }
 
 .header {
-    display: block;
+    display: flex;
     background-color: #023047;
     padding: 2em;
 }
 
 .header h1 {
+    font-size: 4vw;
+}
+
+.header h1, nav {
+    display: inline-block;
     background-color: #023047;
     color: white;
 }
 
+.header-right {
+    display: flex;
+}
+
 .header a {
-    display: inline-block;
-    /* float: right;  this makes them all side by side*/
-    justify-content: flex-end;
+    /* float: right;  /* this makes them all side by side */
+    display: flex;
     flex-direction: row;
     color: white;
     background-color: #023047;
     padding: 1em;
+    font-size: 2vw;
 }
 
 /* When mouse hovers change background color and text color */
@@ -29,20 +38,53 @@
     background-color: gray;
     color: black;
 }
-
-.about-me {
-    display: flex;
+h2 {
+    font-size: 3vw;
+    padding: 1em;
 }
 
-#about-me-title, #work-title {
+/* This is the container element */
+.about-me {
+    display: flex;
+    flex-direction: row;
+}
+
+/* This makes the layout responsive and has the elements display in columns */
+@media (max-width: 667px) {
+    .about-me {
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+    }
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* This makes the layout responsive and has the elements display in columns */
+@media (max-width: 667px) {
+    .work {
+        flex-direction: column;
+    }
+}
+
+/* #about-me-title, #work-title {
     float: left;
     margin-right: 2em;
 }
 
 #anna-photo {
     justify-content: flex-end;
-}
+} */
 
 #project-1-image {
-    width: 50%;
+    width: 95%;
+}
+
+#project-2-image {
+    width: 45%;
 }
