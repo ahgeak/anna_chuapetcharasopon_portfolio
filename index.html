@@ -10,13 +10,13 @@
 <body>
 
     <!-- Header element with links to each section of the page. When a user clicks on the link the user will be taken to that section of the page. -->
+    <div class="whole-page">
     <header class="header">
         <h1>Anna Chuapetcharasopon</h1>
         <nav class="header-right">
             <a href="#about-me-title">About Me</a>
             <a href="#work-title">Work</a>
             <a href="#contact-me-title">Contact Me</a>
-            <a class="nav-links-right">Resume</a>
         </nav>
     </header>
 
@@ -30,45 +30,43 @@
     <!-- This is the work section that will have examples of projects Anna has created -->
     <section class="work">
         <h2 id="work-title">Work</h2>
-        <div id="study-guide-project">
-            <h3>Study Guide</h3>
-            <h4>HTML, CSS</h4>
-            <img id="project-1-image" src="./assets/Images/Northern-Lights-3.png" alt="Screenshot of Anna's first project, a Study Guide">
+        
+        <div id="study-guide-project" class="project-card">
+            <h3 class="text-block"><a href="https://ahgeak.github.io/prework-study-guide/">Study Guide - HTML, CSS</a></h3>
+            <img id="project-1-image" class="project-1-image" src="./assets/Images/Northern-Lights-3.png" alt="Screenshot of Anna's first project, a Study Guide">
         </div>
 
-        <div id="horiseon">
-            <h3>Horiseon</h3>
-            <h4>HTML, CSS</h4>
-            <img id="project-2-image" src="./assets/Images/Northern-Lights-3.png" alt="Refractoring project website screenshot">
+        <div id="horiseon" class="project-card">
+            <h3><a href="https://ahgeak.github.io/urban-octo-telegram_wk01/">Horiseon - HTML, CSS</a></h3>
+            <img class="project-pictures" src="./assets/Images/Northern-Lights-3.png" alt="Refractoring project website screenshot">
         </div>
 
-        <div id="place_holder_1">
-            <h3>Study Guide</h3>
-            <h4>HTML, CSS, JavaScript</h4>
-            <img src="" alt="Placeholder for future projects">
+        <div id="place_holder_1" class="project-card">
+            <h3>Future Project - HTML, CSS, JavaScript</h3>
+            <img class="project-pictures" src="./assets/Images/Northern-Lights-3.png" alt="Placeholder image for future project">
         </div>
 
-        <div id="place_holder_2">
-            <h3>Study Guide</h3>
-            <h4>HTML, CSS, JavaScript</h4>
-            <img src="" alt="Placeholder for future projects">
+        <div id="place_holder_2" class="project-card">
+            <h3>Future Project - HTML, CSS, JavaScript</h3>
+            <img class="project-pictures" src="./assets/Images/Northern-Lights-3.png" alt="Placeholder image for future project">
         </div>
 
-        <div id="place_holder_3">
-            <h3>Study Guide</h3>
-            <h4>HTML, CSS, JavaScript</h4>
-            <img src="" alt="Placeholder for future projects">
+        <div id="place_holder_3" class="project-card">
+            <h3>Future Project - HTML, CSS, JavaScript</h3>
+            <img class="project-pictures" src="./assets/Images/Northern-Lights-3.png" alt="Placeholder image for future project">
         </div>
+
     </section>
 
-    <section class="contact-me">
-        <nav id="contact-me-title">
-            <h2 id="contact-me-title">Contact Me</h2>
+    <footer class="contact-me">
+        <h2 id="contact-me-title">Contact Me</h2>
+        <nav id="contact-me-title" class="footer-right">
+            
             <a href="mailto:annaedwardson@gmail.com">Email</a>
             <a href="https://github.com/ahgeak">GitHub</a>
             <a href="https://www.linkedin.com/">LinkedIn</a>
         </nav>
-    </section>
-
+    </footer>
+</div>
 </body>
 </html>

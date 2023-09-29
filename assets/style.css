@@ -9,22 +9,27 @@
     padding: 2em;
 }
 
+.contact-me {
+    display: flex;
+    background-color: #023047;
+    padding: 2em;
+}
+
 .header h1 {
     font-size: 4vw;
 }
 
-.header h1, nav {
+.header h1, nav, .footer-right h2, .contact-me h2 {
     display: inline-block;
     background-color: #023047;
     color: white;
 }
 
-.header-right {
+.header-right, .footer-right {
     display: flex;
 }
 
-.header a {
-    /* float: right;  /* this makes them all side by side */
+.header a, .contact-me a {
     display: flex;
     flex-direction: row;
     color: white;
@@ -34,7 +39,7 @@
 }
 
 /* When mouse hovers change background color and text color */
-.header a:hover {
+.header a:hover, .contact-me a:hover {
     background-color: gray;
     color: black;
 }
@@ -59,32 +64,66 @@ h2 {
     }
 }
 
+/* This is the container element */
 .work {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* overflow-x: scroll; */
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
-/* This makes the layout responsive and has the elements display in columns */
-@media (max-width: 667px) {
+/* This makes the layout responsive and has the elements display in columns  */
+ @media (max-width: 667px) {
     .work {
         flex-direction: column;
     }
 }
 
-/* #about-me-title, #work-title {
-    float: left;
-    margin-right: 2em;
+/* This is the project cards */
+.project-card {
+    /* display: flex; */
+    padding: 20px;
 }
 
-#anna-photo {
-    justify-content: flex-end;
+
+
+.project-1-image {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+}
+
+
+.project-pictures {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+}
+
+/* .work img {
+    min-width: 150px;
+    width: 30%;
 } */
 
-#project-1-image {
-    width: 95%;
-}
 
-#project-2-image {
-    width: 45%;
-}
+/* .work-container {
+    position: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+} */
+
+
+/* .text-block {
+   position: relative;
+    bottom: 0;
+    font-size: 2em;
+    background-color: #023047;
+    color: white; 
+    padding: .5em;
+} */
+    /* width: auto;
+    font-size: 1em;
+    padding: 20px;
+    text-align: left;
