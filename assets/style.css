@@ -78,10 +78,7 @@ h3 {
 /* This is the container element */
 .work {
   display: flex;
-  /* flex-direction: row; */
-  /* overflow-x: scroll; */
   flex-direction: column;
-  /* flex-wrap: wrap; */
 }
 
 /* This makes the layout responsive and has the elements display in columns  */
