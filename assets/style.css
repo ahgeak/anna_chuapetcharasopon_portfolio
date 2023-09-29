@@ -1,129 +1,116 @@
 * {
-    background-color: #Ffb703;
-    font-family: Georgia, serif;
+  background-color: #ffb703;
+  font-family: Georgia, serif;
 }
 
-.header {
-    display: flex;
-    background-color: #023047;
-    padding: 2em;
-}
-
+/* header and footer container with flex element and responsive padding size */
+.header,
 .contact-me {
-    display: flex;
-    background-color: #023047;
-    padding: 2em;
+  display: flex;
+  background-color: #023047;
+  padding: 2em;
 }
 
 .header h1 {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
-.header h1, nav, .footer-right h2, .contact-me h2 {
-    display: inline-block;
-    background-color: #023047;
-    color: white;
+/* heading elements with background and text colors */
+.header h1,
+nav,
+.footer-right h2,
+.contact-me h2 {
+  display: inline-block;
+  background-color: #023047;
+  color: white;
 }
 
-.header-right, .footer-right {
-    display: flex;
+/* Nav links with flex element */
+.header-right,
+.footer-right {
+  display: flex;
 }
 
-.header a, .contact-me a {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    background-color: #023047;
-    padding: 1em;
-    font-size: 2vw;
+/* header and footer fex elements */
+.header a,
+.contact-me a {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #023047;
+  padding: 1em;
+  font-size: 2vw;
 }
 
 /* When mouse hovers change background color and text color */
-.header a:hover, .contact-me a:hover {
-    background-color: gray;
-    color: black;
+.header a:hover,
+.contact-me a:hover,
+.text-block a:hover {
+  background-color: gray;
+  color: black;
 }
+
 h2 {
-    font-size: 3vw;
-    padding: 1em;
+  font-size: 3vw;
+  padding: 1em;
+}
+
+h3 {
+  font-size: 2.5vw;
 }
 
 /* This is the container element */
 .about-me {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* This makes the layout responsive and has the elements display in columns */
 @media (max-width: 667px) {
-    .about-me {
-        flex-direction: column;
-    }
-    header{
-        flex-direction: column;
-    }
+  .about-me {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
 }
 
 /* This is the container element */
 .work {
-    display: flex;
-    /* flex-direction: row; */
-    /* overflow-x: scroll; */
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+  display: flex;
+  /* flex-direction: row; */
+  /* overflow-x: scroll; */
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
 /* This makes the layout responsive and has the elements display in columns  */
- @media (max-width: 667px) {
-    .work {
-        flex-direction: column;
-    }
+@media (max-width: 667px) {
+  .work {
+    flex-direction: column;
+  }
 }
 
 /* This is the project cards */
 .project-card {
-    /* display: flex; */
-    padding: 20px;
+  display: block;
 }
 
-
-
+/* This image is larger because it is the first project */
 .project-1-image {
-    display: inline-block;
-    width: 95%;
-    height: auto;
+  display: inline-block;
+  width: 50%;
+  height: auto;
 }
 
-
+/* These are the projects after the first project that will be smaller sized */
 .project-pictures {
-    display: inline-block;
-    width: 40%;
-    height: auto;
+  display: inline-block;
+  width: 30%;
+  height: auto;
 }
 
-/* .work img {
-    min-width: 150px;
-    width: 30%;
-} */
-
-
-/* .work-container {
-    position: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-} */
-
-
-/* .text-block {
-   position: relative;
-    bottom: 0;
-    font-size: 2em;
-    background-color: #023047;
-    color: white; 
-    padding: .5em;
-} */
-    /* width: auto;
-    font-size: 1em;
-    padding: 20px;
-    text-align: left;
+/* This styles the project titles */
+.text.block {
+  display: block;
+}

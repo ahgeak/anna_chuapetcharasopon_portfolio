@@ -15,7 +15,11 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 When you are in widescreen you will the navigation bars and the about me section span the width of the page, but when you make the screen smaller you will see the design turns into columns to help the user see all elements of the page propperly.
 
+Portfolio Screenshot:
+![screenshot](./assets/Images/Portfolio_Screenshot.png)
+
 Repository Link: https://github.com/ahgeak/anna_chuapetcharasopon_portfolio
+
 Portfolio URL: 
 
 ## Credits
